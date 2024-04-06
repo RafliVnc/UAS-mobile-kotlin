@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "66848155383",
+    "firebase_url": "https://projekuas-f878c-default-rtdb.firebaseio.com",
+    "project_id": "projekuas-f878c",
+    "storage_bucket": "projekuas-f878c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66848155383:android:3e1bedf7c8045bca81d5f2",
+        "android_client_info": {
+          "package_name": "com.example.projekuas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHX0lrVprNZTtQ6F55RkcdMAXgiyzoEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedxl"
+        android:paddingVertical="16dp"
+        android:text="Tambah Siswa"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txt_judul_detil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tambah Data Siswa"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textJudul"/>
+
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Nama Murid"
+        android:inputType= "textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf= "parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_judul_detil" />
+
+    <TextView
+        android:id="@+id/txtMedu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendidikan Ibu"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nama" />
+    <RadioGroup
+        android:id="@+id/edt_Medu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtMedu">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="SD" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMP" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMA" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="DLL" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/txtFedu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendidikan Ayah"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Medu" />
+    <RadioGroup
+        android:id="@+id/edt_Fedu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtFedu">
+
+        <RadioButton
+            android:id="@+id/radioButtonFedu"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="SD" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFedu2"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMP" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFedu3"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMA" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFedu4"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="DLL" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/edt_studytime"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Jumlah Belajar"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/edt_Fedu" />
+    <EditText
+        android:id="@+id/edt_failure"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Total Gagal"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/edt_studytime" />
+    <EditText
+        android:id="@+id/edt_absences"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Total Absen"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/edt_failure" />
+
+    <EditText
+        android:id="@+id/edt_G1"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Ranking Semester Ganjil"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/edt_absences" />
+    <EditText
+        android:id="@+id/edt_G2"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Ranking Semester Genap"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/edt_G1" />
+    <TextView
+        android:id="@+id/txtHigher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingin Lanjut Kuliah?"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_G2" />
+    <RadioGroup
+        android:id="@+id/edt_higher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtHigher">
+
+        <RadioButton
+            android:id="@+id/radioButtonHigher"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Ingin lanjut" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHigher2"
+            android:layout_margin="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak ingin lanjut" />
+    </RadioGroup>
+<!--    <EditText-->
+<!--        android:id="@+id/edt_higher"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height= "wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint= "Lanjut Kuliah"-->
+<!--        android:inputType="text"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf= "@id/edt_G2" />-->
+    <Button
+        android:id="@+id/btn_tambahMurid"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/white"
+        android:text="Tambah"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_higher" />
+</androidx.constraintlayout.widget.ConstraintLayout>

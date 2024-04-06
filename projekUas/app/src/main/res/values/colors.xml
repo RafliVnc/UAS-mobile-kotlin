@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#8291ED</color>
+    <color name="secondary">#D9DEFA</color>
+    <color name="switch_thumb_color">#FF0000</color> <!-- Warna merah -->
+    <color name="switch_track_color">#FF0000</color> <!-- Warna merah -->
+    <color name="switch_thumb_color_checked">#0000FF</color> <!-- Warna biru -->
+    <color name="switch_track_color_checked">#0000FF</color> <!-- Warna biru -->
+</resources>

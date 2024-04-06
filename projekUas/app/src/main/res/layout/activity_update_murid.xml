@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedxl"
+        android:paddingVertical="16dp"
+        android:text="Ubah Siswa"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/upNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Nama Murid"
+        android:inputType= "textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf= "parent"
+        app:layout_constraintTop_toBottomOf= "@id/textJudul"/>
+    <EditText
+        android:id="@+id/upMedu"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Pendidikan Ibu"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upNama" />
+    <EditText
+        android:id="@+id/upFedu"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Pendidikan Ayah"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upMedu" />
+    <EditText
+        android:id="@+id/upStudytime"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Jam Belajar"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upFedu" />
+    <EditText
+        android:id="@+id/upFailure"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Total Gagal"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upStudytime" />
+    <EditText
+        android:id="@+id/upAbsences"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Total Absen"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upFailure" />
+    <EditText
+        android:id="@+id/upG1"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Ranking Semester Ganjil"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upAbsences" />
+    <EditText
+        android:id="@+id/upG2"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Ranking Semester Genap"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upG1" />
+    <EditText
+        android:id="@+id/upHigher"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint= "Lanjut Kuliah"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/upG2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

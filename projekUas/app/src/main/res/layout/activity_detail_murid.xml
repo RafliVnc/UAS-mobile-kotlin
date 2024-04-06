@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginStart="8dp"
+    android:paddingHorizontal="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundedxl"
+        android:paddingVertical="16dp"
+        android:paddingLeft="10dp"
+        android:text="Detail Siswa"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:text= "Data Siswa"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginVertical="16dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/textJudul" />
+
+    <TextView
+        android:id="@+id/txtNama"
+        android:text= "Nama"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtHeader" />
+
+    <TextView
+        android:id="@+id/dtNama"
+        android:text= "nama"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtNama"/>
+
+    <TextView
+        android:id="@+id/txtMedu"
+        android:text= "Pendidikan Ibu"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtNama" />
+
+    <TextView
+        android:id="@+id/dtMedu"
+        android:text= "Pendidikan Ibu"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtMedu" />
+    <TextView
+        android:id="@+id/txtFedu"
+        android:text= "Pendidikan Ayah"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtMedu" />
+    <TextView
+        android:id="@+id/dtFedu"
+        android:text= "Pendidikan Ayah"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtFedu" />
+
+    <TextView
+        android:id="@+id/txtStudytime"
+        android:text= "Jumlah Jam Belajar"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtFedu" />
+
+    <TextView
+        android:id="@+id/dtStudytime"
+        android:text= "Jumlah Jam Belajar"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtStudytime" />
+
+    <TextView
+        android:id="@+id/txtFailure"
+        android:text= "Total Gagal"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtStudytime" />
+
+    <TextView
+        android:id="@+id/dtFailure"
+        android:text= "Total Gagal"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtFailure" />
+
+    <TextView
+        android:id="@+id/txtAbsences"
+        android:text= "Jumlah Absen"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:paddingHorizontal="4dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtFailure" />
+    <TextView
+        android:id="@+id/dtAbsences"
+        android:text= "Jumlah Absen"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/txtAbsences" />
+    <TextView
+        android:id="@+id/dtG1"
+        android:text= "Ranking Semester Ganjil"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtAbsences" />
+    <TextView
+        android:id="@+id/dtG2"
+        android:text= "Ranking Semester Genap"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtG1" />
+    <TextView
+        android:id="@+id/dtHigher"
+        android:text= "Lanjut Kuliah"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:background="@drawable/card_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/dtG2" />
+
+    <ImageView
+        android:id="@+id/icn_edit"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="Icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_more" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
